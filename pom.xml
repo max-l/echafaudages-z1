@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>emb</groupId>
+  <artifactId>emb</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+       <jetty.version>7.3.0.v20110203</jetty.version>
+       <bayeux.version>2.1.1</bayeux.version>
+   </properties>
+
+   <repositories>
+       <repository>
+           <id>repo2_maven_org</id>
+           <url>http://repo2.maven.org/maven2</url>
+       </repository>
+   </repositories>
+
+
+   <dependencies>
+   
+   		<!-- Jetty Jars -->
+   		
+       <dependency>
+           <groupId>org.eclipse.jetty</groupId>
+           <artifactId>jetty-server</artifactId>
+           <version>${jetty.version}</version>
+       </dependency>
+       
+       <dependency>
+           <groupId>org.eclipse.jetty</groupId>
+           <artifactId>jetty-util</artifactId>
+           <version>${jetty.version}</version>
+       </dependency>
+
+	   <dependency>
+	       <groupId>org.eclipse.jetty</groupId>
+	       <artifactId>jetty-servlet</artifactId>
+	       <version>${jetty.version}</version>
+	   </dependency>
+	   
+	   <!-- Bayeux Jars -->
+	   
+	   <dependency>
+	   		<groupId>org.cometd.java</groupId>
+			<artifactId>cometd-java-server</artifactId>
+			<version>${bayeux.version}</version>
+		</dependency>
+	   
+	   <dependency>
+	   		<groupId>org.cometd.java</groupId>
+			<artifactId>cometd-java-common</artifactId>
+			<version>${bayeux.version}</version>
+		</dependency>
+		                     
+        <dependency>
+            <groupId>org.cometd.java</groupId>
+            <artifactId>bayeux-api</artifactId>
+            <version>${bayeux.version}</version>
+        </dependency>		
+   </dependencies>
+  
+</project>
